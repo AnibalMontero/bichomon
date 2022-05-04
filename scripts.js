@@ -8,13 +8,17 @@ let primerDiv = document.querySelector('.infocard-list');
 primerDiv.style.backgroundColor = '#F07167';
 
 // Imprime por consola la URL de la página.
-console.log(document);
+
 console.log(document.URL);
 // Imprime por consola el dominio de la página.
 console.log(document.domain);
 
 // Imprime todos los nodos de imagen.
-console.log(document.querySelectorAll('img'));
+// console.log(document.querySelectorAll('img'));
+let imagenes = document.querySelectorAll('img');
+for (let i = 0; i < imagenes.length; i++) {
+  console.log(imagenes[i].src);
+}
 //Sustituye el atributo "src" de todas las imágenes por este "https://media.giphy.com/media/2v170e71aanfi/giphy.gif"
 // let imagenes = document.querySelectorAll('img');
 // for (imagen of imagenes) {
